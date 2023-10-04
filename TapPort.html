@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad's Portfolio</title>
+    <link rel="stylesheet" href="TapPort.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha384-ZJw5FsP1F5THBON5lie97ZkMr7Gw8fpuAyrvWdD+WBZlpLegxhjC5sppnLPfM5iv" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home"><span class="brown-text">Home</span></a></li>
+                <li><a href="#about"><span class="blue">About Me</span></a></li>
+                <li><a href="#contact"><span class="blue">Contact Me</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="allcol">
+        <div class="column">
+            <section id="home">
+                <div class="intro">
+                    <p><span class="blue">Welcome to my site</span></p>
+                    <h1><span class="blue">Hi, I'm Ahmad, a Backend</span> <span class="brown-text">Developer</span></h1>
+                </div>
+                <div class="expand">
+                    <p>Hello! I'm Ahmad, a passionate Computer Engineering graduate with a strong background in software development.
+                        <p class="hidden-text" id="hidden-text"> I've had the privilege of working as a Node.js developer at  TBUS, where I contributed to building innovative web applications. My expertise extends to full-stack web development, allowing me to tackle projects from both the front-end and back-end perspectives. I'm driven by a love for technology and an eagerness to create meaningful digital experiences. When I'm not coding, you can often find me exploring new technologies, solving complex problems, and continually honing my skills in the ever-evolving world of web development.</p>
+                    </p>
+                    <a href="#" id="see-more-link" onclick="toggleHiddenText();"><span class="seem">See more...</span></a>
+                </div>
+                <div class="buttons">
+                    <button class="hire-me">Hire Me!</button>
+                    <button class="see-projects">See My Projects</button>
+                </div>
+            </section>
+        </div>
+        <div class="col2">
+            <img src="./ahmad23.jpg" alt="Personal PIC here">
+        </div>
+    </div>
+
+    <script>
+        function toggleHiddenText() {
+            var hiddenText = document.getElementById("hidden-text");
+            var seeMoreLink = document.getElementById("see-more-link");
+
+            if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+                hiddenText.style.display = "block";
+                seeMoreLink.innerHTML = '<span class="seem">See less...</span>';
+            } else {
+                hiddenText.style.display = "none";
+                seeMoreLink.innerHTML = '<span class="seem">See more...</span>';
+            }
+        }
+    </script>
+</body>
+</html>

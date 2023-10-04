@@ -1,0 +1,146 @@
+/* Reset some default styles */
+*{
+    height: auto;
+    width:auto;
+}
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    
+}
+.allcol{
+    display: flex;
+    flex: 1;
+}
+.right{
+    flex: auto;
+}
+.column{
+    min-width: 50%;
+    display:flex;
+    flex: 1;
+}
+/* Apply Poppins font */
+body {
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+/* Header styles */
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+
+}
+
+header nav ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+}
+.col2{
+    max-width: 30%;
+}
+img{
+    border-radius:0 0 0 45% ;
+    height: 40%;
+    width: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: -20px 0px 5px rgba(11, 207, 37, 0.3)
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Section styles */
+section {
+    padding: 40px;
+    max-width: 60%;
+}
+
+.intro h1 {
+    font-size: 36px;
+}
+
+.brown-text {
+    color: #D1884F;
+}
+.blue{
+    color:#008AAA ;
+    
+}
+
+.expand {
+    text-align: left;
+    margin-top: 20px;
+}
+.seem{
+    color: #3BBADB;
+}
+nav{
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+}
+
+.buttons {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 20px;
+  
+}
+
+.hire-me {
+    background-color: #008AAA;
+    color: white;
+    border: none;
+    
+    cursor: pointer;
+    border-radius: 5px;
+    max-height: 30px;
+    max-width: 20%;
+    box-shadow: 0px 5px 10px #3BBADB;
+    font-family: 'Poppins', sans-serif;
+    font-size: 110%;
+    
+}
+
+.see-projects {
+    background-color: white;
+    color: #008AAA;
+    border: none;
+    
+    cursor: pointer;
+    border-radius: 5px;
+    max-height: 30px;
+    max-width: 30%;
+    border: 2px solid #3BBADB;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+margin-left: -18%;
+}
+.hidden-text {
+    display: none;
+}
+
+
+#see-more-link {
+    color: #007bff; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#see-more-link:hover {
+    color: #0056b3;
+}
